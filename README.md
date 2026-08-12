@@ -7,7 +7,7 @@ This project was created to strengthen my **React.js and JavaScript logic-buildi
 ---
 
 ## 🚀 Live Demo
-
+https://expanse-tracker-beta-lake.vercel.app/
 
 
 ---
