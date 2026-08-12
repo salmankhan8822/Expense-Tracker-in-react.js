@@ -1,0 +1,105 @@
+/* Transactions Card */
+
+.transactions-card {
+  padding: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 18px;
+
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+}
+
+/* Filters */
+
+.transaction-filters {
+  display: flex;
+
+  gap: 8px;
+
+  margin-bottom: 20px;
+
+  padding: 4px;
+
+  background: #f1f5f9;
+
+  border-radius: 10px;
+
+  width: fit-content;
+}
+
+.filter-btn {
+  padding: 8px 15px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.filter-btn:hover {
+  color: #1e293b;
+
+  background: #ffffff;
+}
+
+.filter-btn:focus {
+  color: #ffffff;
+
+  background: #4f46e5;
+}
+
+/* Transaction List */
+
+.transaction-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+/* Empty state */
+
+.transaction-list:empty::before {
+  content: "No transactions yet.";
+
+  display: block;
+
+  padding: 35px 20px;
+
+  text-align: center;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  .transactions-card {
+    padding: 20px;
+  }
+
+  .transaction-filters {
+    width: 100%;
+  }
+
+  .filter-btn {
+    flex: 1;
+  }
+}

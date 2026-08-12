@@ -1,0 +1,197 @@
+/* Form Card */
+
+.form-card {
+  padding: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 18px;
+
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+}
+
+/* Section Heading */
+
+.section-heading {
+  margin-bottom: 22px;
+}
+
+.section-label {
+  margin: 0 0 5px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  color: #6366f1;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.8px;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  font-size: 21px;
+
+  color: #0f172a;
+}
+
+/* Form */
+
+.expense-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.form-group label {
+  font-size: 13px;
+
+  font-weight: 600;
+
+  color: #334155;
+}
+
+/* Inputs */
+
+.form-group input,
+.form-group select {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  height: 46px;
+
+  padding: 0 13px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #1e293b;
+
+  font-size: 14px;
+
+  transition: 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #6366f1;
+
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* Form Row */
+
+.form-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+}
+
+/* Amount Input */
+
+.amount-input {
+  display: flex;
+
+  align-items: center;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  height: 46px;
+}
+
+.amount-input span {
+  padding: 0 13px;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  background: #f8fafc;
+
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.amount-input input {
+  border: none !important;
+
+  box-shadow: none !important;
+
+  height: 100%;
+}
+
+/* Add Button */
+
+.add-transaction-btn {
+  width: 100%;
+
+  height: 48px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #4f46e5;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.add-transaction-btn:hover {
+  background: #4338ca;
+
+  transform: translateY(-1px);
+}
+
+.add-transaction-btn:active {
+  transform: scale(0.98);
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-card {
+    padding: 20px;
+  }
+}
